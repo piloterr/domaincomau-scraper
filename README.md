@@ -70,7 +70,7 @@ response = requests.get(
     params={
         "query": "https://www.domain.com.au/7d-27-31-ocean-street-n-bondi-nsw-2026-2021178032",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -252,7 +252,7 @@ response = requests.get(
     params={
         "query": "Bondi NSW 2026",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
